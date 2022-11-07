@@ -1,0 +1,48 @@
+/* h1 {
+    color: yellow;
+}
+
+p {
+    border: 2px solid blue;
+} */
+
+/* * {
+    
+} */
+
+/* .red-border {
+    background-color: cyan;
+    border: 5px solid red;
+}
+
+#lorem-text1 {
+    font-weight: bold;
+}
+
+.red-border, #lorem-text1, h1 {
+    font-style: italic;
+} */
+
+header h1 {
+    /* background-color: rgba(55, 209, 25, 0.5); */
+    background-color: #2d20a13d;
+    background-color: hsl(200, 40%, 50%);
+    font-size: 10vw;
+}
+
+h1 {
+    font-size: 10%;
+}
+
+header {
+    width: 400px;
+    border: 5px solid red;
+}
+
+img {
+    width: 10vw;
+}
+
+header img {
+    width: 10vw;
+}
