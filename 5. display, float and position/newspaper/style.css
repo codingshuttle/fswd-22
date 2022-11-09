@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+ul {
+    list-style: none;
+    text-align: end;
+    padding: 30px;
+}
+
+li {
+    color: white;
+    display: inline;
+    font-size: 1.6rem;
+    padding-inline: 20px;
+
+}
+
+.hero-left {
+    display: inline-block;
+    width: 60%;
+    margin-top: 20vh;
+    margin-left: 10vw;
+}
+
+.heading {
+    font-size: 3rem;
+    
+}
+
+.subheading {
+    margin-top: 20px;
+}
+
+.cta-explore-more {
+    margin-top: 20px;
+    padding: 20px 60px;
+}
+
+.hero-image {
+    width: 20vw;
+    float: right;
+    margin-top: 20vh;
+    margin-right: 20px;
+}
+
+footer {
+    height: 200vh;
+}

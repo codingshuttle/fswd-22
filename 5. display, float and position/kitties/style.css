@@ -1,0 +1,69 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.top {
+    width: 100%;
+    height: 100px;
+    background-color: lightseagreen;
+}
+
+.left {
+    width: 60%;
+    height: 100%;
+    background-color: magenta;
+    display: inline-block;
+}
+
+.right {
+    width: 40%;
+    height: 100%;
+    background-color: brown;
+    float: right;
+}
+
+body {
+    background-color: lightpink;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.cat-outside {
+    width: 60px;
+    position: sticky;
+    left: 20px;
+    top: 10px;
+}
+
+.text-box {
+    width: 90%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.kitty {
+    width: 200px;
+    float: right;
+}
+
+.bottom-kitty {
+    width: 200px;
+    float: left;
+}
+
+.text-wrapper {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    overflow: scroll auto;
+}
+
+
+.spacer {
+    height: 200vh;
+}
