@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@500;900&display=swap');
+
+body {
+    /* font-size: 32px; */
+    font-family: 'Roboto', monospace, sans-serif;
+    background-color: wheat;
+}
+
+.container {
+    width: 80%;
+    margin: 50px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 1px 10px #ccc, -4px -4px 1px 10px purple;
+    position: relative;
+}
+
+h1 {
+    color: blueviolet;
+    /* background-color: burlywood; */
+    /* text-decoration-line: underline overline; */
+    /* text-decoration-line: underline;
+    text-decoration-color: cadetblue;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 20px; */
+    /* text-decoration: underline blue 4px; */
+    /* text-transform: uppercase; */
+    text-shadow: 2px 2px 4px black;
+    /* font-size: 32px; */
+    font-weight: normal;
+    /* font-family: cursive; */
+    position: absolute;
+    left: 100px;
+    bottom: 10px;
+    display: inline;
+}
+
+p {
+    /* text-align: center; */
+    /* text-align: justify; */
+    border: 2px dotted red;
+    text-indent: 100px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    word-spacing: 8px;
+    font-weight: 500;
+    font-style: italic;
+}
+
