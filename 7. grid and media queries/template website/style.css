@@ -1,0 +1,32 @@
+body {
+    display:  grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: 'hd hd hd'
+                         'nv mn ad'
+                         'ft ft ft';
+}
+
+.red-box {
+    border: 2px solid red;
+}
+
+header {
+    grid-area: hd;
+}
+
+main {
+    grid-area: mn;
+}
+
+.navigation {
+    grid-area: nv;
+    align-self: flex-start;
+}
+
+.advertisement {
+    grid-area: ad;
+}
+
+footer {
+    grid-area: ft;
+}

@@ -1,0 +1,65 @@
+body {
+    height: 100vh;
+    background-color: red;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    flex-basis: 100%;
+    padding: 20px;
+    cursor: pointer;
+    border: 5px solid rgb(0, 108, 250);
+    background-color: rgb(155, 215, 255);
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* @media screen and (orientation: landscape) and (min-width: 1000px) {
+    body {
+        background-color: yellow;
+    }
+} */
+
+/* tablets only */
+@media only screen and (min-width: 641px) {
+    body {
+        background-color: green;
+    }
+}
+
+/* larger screens like laptop */
+@media only screen and (min-width: 769px) {
+    body {
+        background-color: blue;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    h1 {
+        font-size: 8rem;
+        margin-top: 100px;
+    }
+    
+    p {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
