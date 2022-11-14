@@ -31,8 +31,9 @@ h3 {
 }
 
 .container {
-    width: 70%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     gap: 20px;
     margin-inline: auto;
     margin-block: 20px;
@@ -44,11 +45,11 @@ h3 {
 }
 
 .left-column {
-    width: 35%;
+    flex-basis: 100%;
 }
 
 .right-column {
-    width: 65%;
+    flex-basis: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -138,3 +139,18 @@ i {
     margin-block: 10px;
 }
 
+@media  screen and (min-width: 641px) {
+    .container {
+        width: 70%;
+        flex-direction: row;
+    }
+
+    .left-column {
+        flex-basis: 35%;
+    }
+
+    .right-column {
+        flex-basis: 65%;
+    }
+    
+}
