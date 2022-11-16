@@ -1,0 +1,12 @@
+p {
+    font-size: 3rem;
+}
+
+p::before {
+    content: 'This is a Message';
+    background-color: tomato;
+}
+
+p::after {
+    content: 'After text'
+}

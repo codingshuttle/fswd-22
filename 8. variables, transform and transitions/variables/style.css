@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brown-color: #981200;
+    --text-sixe: 1.2rem;
+}
+
+.container {
+    /* width: calc(100% - 80px); */
+    /* width: max(50%, 300px, 70vw, 500px); */
+    /* width: min(800px, 100%); */
+    border: 2px solid #546723;
+    margin-inline: auto;
+}
+
+.box {
+    display: inline-block;
+    height: min(40px, 20%);
+    border: 2px solid #981200;
+}
+
+button {
+    --brown-color: #ef1234;
+    --button-text-size: 16px;
+    background-color: var(--brown-color);
+    padding: 10px 40px;
+    font-size: var(--button-text-size);
+}

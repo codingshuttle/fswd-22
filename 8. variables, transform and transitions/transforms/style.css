@@ -1,0 +1,27 @@
+.box {
+    width: 200px;
+    height: 200px;
+    color: white;
+    background-color: #ccc;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.original {
+    background-color:purple;
+    /* transform: scale(0.8, 0.4); */
+    /* transform: scaleX(0.8) scaleY(0.4); */
+    /* transform: skew(-30deg, 5deg); */
+    /* transform: translate(50px, 100px); */
+    /* transition: 2s ease-in; */
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-property: transform, background-color;
+}
+
+.original:hover {
+    /* transform: rotate(60deg); */
+    transform: scale(0.6);
+    background-color: sandybrown;
+}
