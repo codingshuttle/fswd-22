@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew Animation</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            /* animation: skew-animation 1s ease-in-out infinite alternate; */
+            animation: up-down 0.8s ease-in-out infinite alternate;
+
+        }
+
+        @keyframes skew-animation {
+            0% {
+                transform: skew(-20deg, -20deg);
+            }
+            100% {
+                transform: skew(20deg, 20deg);
+            }
+        }
+
+        @keyframes up-down {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-40px);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" style="background-color: #DB4437;"></div>
+        <div class="box" style="animation-delay: 0.2s; background-color: #4285F4;"></div>
+        <div class="box" style="animation-delay: 0.4s; background-color: #F4B400;"></div>
+        <div class="box" style="animation-delay: 0.6s; background-color: #0F9D58;"></div>
+    </div>
+
+</body>
+</html>

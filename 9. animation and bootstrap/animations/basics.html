@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+
+        * {
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d44890;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            animation: left-to-right 1s 1 5s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes left-to-right {
+            0% {
+                transform: translateX(-100px);
+                background-color: green;
+            }
+            100% {
+                transform: translateX(100px);
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

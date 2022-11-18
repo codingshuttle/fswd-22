@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+
+        * {
+            margin: 0;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #d44890;
+        }
+
+        .button {
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            font-size: 2rem;
+            padding: 20px 30px;
+            color: black;
+            transition: 1.4s ease-in;
+            position: relative;
+            z-index: 1;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index: -1;
+            transition: 0.8s ease-in-out;
+        }
+
+        .button:hover::before {
+            transform: rotate(180deg);
+        }
+
+        .button:after {
+            content: '';
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            transform: translateX(5%) scaleY(0);
+            width: 90%;
+            height: 4px;
+            background-color: black;
+            z-index: -1;
+            transition: 0.8s ease-in-out;
+        }
+
+        .button:hover::after {
+            transform: translateX(5%) scaleY(1);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <a class="button" href="#">Button</a>
+    </div>
+
+</body>
+
+</html>
