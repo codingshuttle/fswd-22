@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        .grandparent{
+            width: 500px;
+            height: 500px;
+            background-color: beige;
+            position: relative;
+        }
+
+        .parent {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: teal;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: 0.5s ease-in;
+        }
+
+        .round {
+            border-radius: 50%;
+        }
+
+    </style>
+
+    <script src="events.js" defer></script>
+</head>
+<body>
+    <div class="grandparent" id="grandparent">
+       <div class="parent" id="parent">
+           <div class="child" id="child"></div>
+       </div>
+    </div>
+    <div class="spacer" style="height: 100vh;"></div>
+</body>
+</html>
