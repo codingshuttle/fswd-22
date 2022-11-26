@@ -8,8 +8,10 @@ nav {
     background-color: #333;
     color: white;
     display: flex;
-    flex-direction: column;
+    height: 60px;
+    align-items: center;
     position: relative;
+    justify-content: space-between;
     padding: 20px;
 }
 
@@ -28,11 +30,6 @@ a:hover {
     background-color: #777;
 }
 
-.toggler {
-    position: absolute;
-    right: 20px;
-}
-
 ul {
     list-style: none;
     display: flex;
@@ -40,19 +37,30 @@ ul {
 }
 
 .nav-links {
-    display: none;
+    position: fixed;
+    background-color: #333;
+    left: 0;
+    width: 100%;
+    top: 60px;
+    transform: translateY(-150%);
+    transition: 0.3s ease;
+    z-index: -4;
 }
 
 .nav-links.active {
-    display: block;
+    transform: translateY(0%);
 }
 
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 
     .nav-links {
         display: block;
+        position: static;
+        transform: translateY(0%);
+        width: auto;
+        z-index: 0;
     }
 
     nav {
