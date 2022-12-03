@@ -1,0 +1,17 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+    border: 2px solid #ccc;
+    padding: 40px;
+    height: 400px;
+}
+
+img {
+    width: 100%;
+}

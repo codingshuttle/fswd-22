@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  .canvas {
+    height: 100vh;
+    background-color: #120834;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 80vw;
+    aspect-ratio: 16/9;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .left-btn {
+      left: 20px;
+  }
+
+  .right-btn {
+    right: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    height: 100%;
+    background-color: red;
+    transition: 1s ease;
+}
+
+.img-style {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
