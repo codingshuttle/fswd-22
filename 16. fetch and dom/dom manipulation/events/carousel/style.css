@@ -55,3 +55,26 @@
     aspect-ratio: 16/9;
     object-fit: cover;
 }
+
+.carousel-nav {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    transition: 0.4s ease;
+}
+
+.carousel-dot.active {
+    background-color: white;
+}

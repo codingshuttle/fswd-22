@@ -15,19 +15,27 @@ async function fetchData() {
         loading.style.display = 'block';
         phoneBox.style.display = 'none';
 
-        const response = await fetch('https://dummyjson.com/products/1');
+        const response = await fetch('https://dummyjson.pom/products/1');
+
         console.log(response);
 
-        const jsonData = await response.json();
-        console.log(jsonData);
+        if(response.statusText == "OK") {
+            const jsonData = await response.json();
+            console.log(jsonData);
+    
+            phoneBox.style.display = 'block';
+            loading.style.display = 'none';
+    
+            loadData(jsonData);
+        } else {
+            loading.innerHTML = "Invalid response";
+        }
 
-        phoneBox.style.display = 'block';
-        loading.style.display = 'none';
-
-        loadData(jsonData);
+        
 
     } catch (err) {
         console.log(err);
+        loading.innerHTML = "Invalid response";
     } 
     
 }
