@@ -1,0 +1,26 @@
+.news-card {
+    padding: 20px;
+    border: 2px solid #666;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.btn-read-more {
+    width: 80%;
+    margin-inline: auto;
+    padding-block: 20px;
+    color: white;
+    background-color: black;
+}
