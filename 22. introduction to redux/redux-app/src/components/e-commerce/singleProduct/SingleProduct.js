@@ -2,6 +2,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart } from "../../../redux/slices/cartSlice";
 import "./SingleProduct.css";
+import MyButton from "../MyButton";
+
 
 function SingleProduct({ product }) {
 
@@ -27,6 +29,7 @@ function SingleProduct({ product }) {
                 <button className="button" onClick={() => dispatach(removeFromCart(product.id))}>-</button>
                 <h4>{curQuantity}</h4>
                 <button className="button" onClick={() => dispatach(addToCart(product.id))}>+</button>
+                <MyButton>Mytext</MyButton>
             </div>
         </div>
     );
